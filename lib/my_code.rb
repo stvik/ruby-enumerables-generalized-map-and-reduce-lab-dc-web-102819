@@ -8,6 +8,7 @@ def map(source_array)
     yield
     i += 1
   end
+  new_array
 end
   
   
