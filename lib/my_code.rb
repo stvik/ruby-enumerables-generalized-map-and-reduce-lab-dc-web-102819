@@ -10,6 +10,7 @@ def map(source_array)
   new_array
 end
   
-  
+def reduce(source_array, starting_value = 0) 
+   
 
 map([1,2,3,-9]){|n| n * -1}
