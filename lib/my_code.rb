@@ -12,7 +12,7 @@ end
   
 def reduce(source_array, starting_value = 0) 
   i = 0
-  if starting_value == 0
+  if starting_value != 0
     total = starting_value
     i = 0
   else 
