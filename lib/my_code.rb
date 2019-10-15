@@ -12,6 +12,8 @@ end
   
 def reduce(source_array, starting_value = 0) 
    total = starting_value
-   
+   i = 0
+   while i < source_array.size do
+     
 
 map([1,2,3,-9]){|n| n * -1}
