@@ -12,11 +12,18 @@ end
   
 def reduce(source_array, starting_value = 0) 
   i = 0
+  if starting_value == 0
+    total = starting_value
+    i = 0
+  else 
+    total = source_array[0]
+    i = 1
+  end
   while i < source_array.length do
-    starting_value = yield(starting_value, source_array[i])
+    total = yield(total, source_array[i])
      i += 1
   end
-  starting_value
+  total
 end
 
 map([1,2,3,-9]){|n| n * -1}
