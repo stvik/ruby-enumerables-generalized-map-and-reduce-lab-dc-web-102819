@@ -17,7 +17,7 @@ def reduce(source_array, starting_value = 0)
      new = yield(total, source_array[i])
      i += 1
   end
-  total
+  new
 end
 
 map([1,2,3,-9]){|n| n * -1}
