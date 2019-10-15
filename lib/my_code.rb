@@ -5,9 +5,9 @@ def map(source_array)
   i = 0
   while i < source_array.size do
     new_array[i] = source_array[i]
+    yield (new_array[i])
     i += 1
   end
-  yield
   new_array
 end
   
