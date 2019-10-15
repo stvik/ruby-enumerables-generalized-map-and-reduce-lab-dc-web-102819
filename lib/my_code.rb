@@ -3,11 +3,10 @@
 def map(source_array)
   new_array = []
   i = 0
-  while i < source_array.size do
+  yield(while i < source_array.size do
     new_array[i] = source_array[i]
     i += 1
-  end
-  yield(new_array)
+  end)
 end
   
   
